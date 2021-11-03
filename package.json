@@ -1,0 +1,23 @@
+{
+  "name": "system-contracts",
+  "version": "1.0.0",
+  "description": "system contracts",
+  "main": "generate-contracts.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "sol-merger": "^3.1.0",
+    "@openzeppelin/test-helpers": "^0.5.9"
+  },
+  "scripts": {
+    "merge": "sol-merger -c \"./contracts/v1/*.sol\" ./build",
+    "compile": "truffle compile --all",
+    "test": "truffle test"
+  },
+  "author": "",
+  "license": "ISC"
+}
